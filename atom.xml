@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://jarviswang0903.github.io/"/>
   <updated>2020-04-28T08:04:02.254Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://jarviswang0903.github.io/</id>
   
   <author>
     <name>jarvisWang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/posts/3eeb.html"/>
-    <id>http://yoursite.com/posts/3eeb.html</id>
+    <link href="https://jarviswang0903.github.io/posts/3eeb.html"/>
+    <id>https://jarviswang0903.github.io/posts/3eeb.html</id>
     <published>2019-12-07T14:15:57.000Z</published>
     <updated>2020-04-28T08:04:02.254Z</updated>
     
@@ -36,10 +36,10 @@
     </summary>
     
     
-      <category term="hello-world" scheme="http://yoursite.com/categories/hello-world/"/>
+      <category term="hello-world" scheme="https://jarviswang0903.github.io/categories/hello-world/"/>
     
     
-      <category term="hello-world" scheme="http://yoursite.com/tags/hello-world/"/>
+      <category term="hello-world" scheme="https://jarviswang0903.github.io/tags/hello-world/"/>
     
   </entry>
   
