@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jarviswang0903.github.io/"/>
-  <updated>2020-04-29T07:49:41.346Z</updated>
+  <updated>2020-04-29T14:45:14.769Z</updated>
   <id>https://jarviswang0903.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Differential Treatment for Stuff and Things</title>
+    <link href="https://jarviswang0903.github.io/posts/137f.html"/>
+    <id>https://jarviswang0903.github.io/posts/137f.html</id>
+    <published>2020-04-29T12:28:05.000Z</published>
+    <updated>2020-04-29T14:45:14.769Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Teaser&quot;&gt;&lt;a href=&quot;#Teaser&quot; class=&quot;headerlink&quot; title=&quot;Teaser&quot;&gt;&lt;/a&gt;Teaser&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/loading.gif&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="CVPR-2020" scheme="https://jarviswang0903.github.io/categories/CVPR-2020/"/>
+    
+    
+      <category term="DA for Seg" scheme="https://jarviswang0903.github.io/tags/DA-for-Seg/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

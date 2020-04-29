@@ -12,7 +12,7 @@
 
 
 
-<title>Hello World | Yichao Wang</title>
+<title>Differential Treatment for Stuff and Things | Yichao Wang</title>
 
 
 
@@ -39,6 +39,45 @@
 
     
     
+        
+            <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
         
     
 
@@ -175,7 +214,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Hello World</h1>
+            <h1 class="post-title">Differential Treatment for Stuff and Things</h1>
             
                 <div class="post-meta">
                     
@@ -184,14 +223,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">December 7, 2019&nbsp;&nbsp;22:15:57</a>
+                        Date: <a href="#">April 29, 2020&nbsp;&nbsp;20:28:05</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/hello-world/">hello-world</a>
+                                <a href="/categories/CVPR-2020/">CVPR-2020</a>
                             
                         </span>
                     
@@ -200,15 +239,25 @@
         </header>
 
         <div class="post-content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <h2 id="Teaser"><a href="#Teaser" class="headerlink" title="Teaser"></a>Teaser</h2><p><img src="/images/loading.gif" data-original="../images/DTST.png" alt="teaser"></p>
+<hr>
+<h2 id="Movitation"><a href="#Movitation" class="headerlink" title="Movitation"></a>Movitation</h2><p>Based on the observation that stuff categories usually share similar appearances across images of different domains while things (i.e. object instances) have much larger differences, we propose to improve the semantic-level alignment with different strategies for stuff regions and for things: </p>
+<p>1) for the stuff categories, we generate feature representation for each class and conduct the alignment operation from the target domain to the source domain;<br>2) for the thing categories, we generate feature representation for each individual instance and encourage the instance in the target domain to align with the most similar one in the source domain.</p>
+<hr>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p><img src="/images/loading.gif" data-original="../images/DTST_pipline.png" alt="pipline"></p>
+<h3 id="Stuff-and-instance-matching-SIM"><a href="#Stuff-and-instance-matching-SIM" class="headerlink" title="Stuff and instance matching (SIM)"></a>Stuff and instance matching (SIM)</h3><h4 id="Stuff-Matching-SM"><a href="#Stuff-Matching-SM" class="headerlink" title="Stuff Matching (SM)"></a>Stuff Matching (SM)</h4><p><img src="/images/loading.gif" data-original="../images/DTST_SM.png" alt="SM"></p>
+<p>First, we discuss the matching process for the <strong>background classes</strong> such as road, sidewalk, sky and etc.. These classes usually cover a large area of the image and lack appearance variation, so we only extract the <strong>image-level stuff feature representation</strong> for them.</p>
+<p>For each source domain image, we access the correctly classified label map by selecting the predicted labels matched with the ground truth labels in Eqn (4).</p>
+<p>$$L_{P_i}^s=\mathop{argmax}\limits_{k \in N}(C(f_i^s)^{(k)})$$<br>$$L_{c_i}^s=L_{G_i}^s \cap L_{P_i}^s$$</p>
+<p>where $L_{c_i}^s$ is the correctly classified label map, $L_{G_i}^s$ is the ground truth label map, $L_{P_i}^s$ is the predicted label map, and $i \in {1..|X^S|}$.</p>
+<h4 id="Instance-Matching-IM"><a href="#Instance-Matching-IM" class="headerlink" title="Instance Matching (IM)"></a>Instance Matching (IM)</h4><p><img src="/images/loading.gif" data-original="../images/DTST_IM.png" alt="IM"></p>
+<p>Second, we discuss the instance matching process for the foreground classes such as cars, persons and etc.. Because the ground truth does not provide the instance level annotations, we generate the foreground instance mask by finding the disconnected regions for each foreground class in the label map L. This coarsely segment the intra-class semantic regions into multiple instances, and thus various instancelevel feature representations of one image can be generated accordingly.</p>
+<h4 id="Loss-Func"><a href="#Loss-Func" class="headerlink" title="Loss Func."></a>Loss Func.</h4><p>We follow a two-step training procedure to improve the performance of the generator G on semantic segmentation task on the target domain dataset. First, we train our model without the self-supervised learning module, and optimize the target function in Eqn (12) with G and D in an adversarial training strategy:<br>$$\mathop{min}\limits_{G,D} \mathcal{L_{step1} = \mathop{min}\limits_{G}(\lambda_{seg})}$$</p>
+<hr>
+<h2 id="Experiments"><a href="#Experiments" class="headerlink" title="Experiments"></a>Experiments</h2><h3 id="GTA5-to-Cityscapes"><a href="#GTA5-to-Cityscapes" class="headerlink" title="GTA5 to Cityscapes"></a>GTA5 to Cityscapes</h3><p><img src="/images/loading.gif" data-original="../images/DTST_EXP.png" alt="EXP"></p>
+<h4 id="Ablation-study"><a href="#Ablation-study" class="headerlink" title="Ablation study"></a>Ablation study</h4><p><img src="/images/loading.gif" data-original="../images/DTST_AB.png" alt="AB"></p>
+<h3 id="SYNTHIA-to-Cityscsapes"><a href="#SYNTHIA-to-Cityscsapes" class="headerlink" title="SYNTHIA to Cityscsapes"></a>SYNTHIA to Cityscsapes</h3><p><img src="/images/loading.gif" data-original="../images/DTST_EXP_1.png" alt="EXP"></p>
+<h4 id="Ablation-study-1"><a href="#Ablation-study-1" class="headerlink" title="Ablation study"></a>Ablation study</h4><p><img src="/images/loading.gif" data-original="../images/DTST_AB_1.png" alt="AB"></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -241,7 +290,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://jarviswang0903.github.io/posts/3eeb.html">https://jarviswang0903.github.io/posts/3eeb.html</a></span>
+                        <span><a href="https://jarviswang0903.github.io/posts/137f.html">https://jarviswang0903.github.io/posts/137f.html</a></span>
                     </p>
                 
                 
@@ -265,7 +314,7 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/hello-world/"># hello-world</a>
+                        <a href="/tags/DA-for-Seg/"># DA for Seg</a>
                     
                         
                 </span>
@@ -278,8 +327,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/posts/137f.html">Differential Treatment for Stuff and Things</a>
             
+            <a class="next" rel="next" href="/posts/3eeb.html">Hello World</a>
             
         </section>
 
