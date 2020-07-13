@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jarviswang0903.github.io/"/>
-  <updated>2020-04-29T16:34:30.994Z</updated>
+  <updated>2020-05-02T14:41:47.823Z</updated>
   <id>https://jarviswang0903.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Harmonizing Transferability and Discriminability for Adapting Object Detectors</title>
+    <link href="https://jarviswang0903.github.io/posts/d09c.html"/>
+    <id>https://jarviswang0903.github.io/posts/d09c.html</id>
+    <published>2020-05-02T14:29:53.000Z</published>
+    <updated>2020-05-02T14:41:47.823Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Movitation&quot;&gt;&lt;a href=&quot;#Movitation&quot; class=&quot;headerlink&quot; title=&quot;Movitation&quot;&gt;&lt;/a&gt;Movitation&lt;/h2&gt;&lt;hr&gt;
+&lt;h2 id=&quot;Method&quot;&gt;&lt;a href=&quot;#Method&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Differential Treatment for Stuff and Things</title>

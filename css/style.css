@@ -667,6 +667,16 @@ header label {
 #summary {
   line-height: 1em;
 }
+strong {
+  display: block;
+}
+archive-item-teaser {
+  float: left;
+}
+archive-item-summary {
+  float: right;
+  width: 100%;
+}
 .post-wrap .categories-card {
   margin: 0 auto;
   margin-top: 1em;
